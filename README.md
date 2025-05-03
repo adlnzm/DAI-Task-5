@@ -75,8 +75,8 @@ categorical_cols = df_titanic.select_dtypes(include=['object']).columns.tolist()
 sns.boxplot(y=df_titanic['Fare'])
 ```
 - Shows distribution, outliers, and median Fare values.
-- 
-[Box Plot](images/boxplot.png)
+
+(images/boxplot.png)
 
 ### Histogram of Age
 ```python
@@ -84,16 +84,16 @@ sns.histplot(data=df_titanic, x='Age', kde=True)
 ```
 - Displays distribution of passengers' ages.
 - KDE (Kernel Density Estimate) curve shows smooth distribution.
-- 
-[Histogram](images/hist.png)
+  
+(images/hist.png)
 
 ### Scatter Plot: Age vs Survived
 ```python
 sns.scatterplot(data=df_titanic, x='Age', y='Survived')
 ```
 - Shows the relationship between Age and survival.
-- 
-[Scatter Plot](images/scatter_plot.png)
+  
+(images/scatter_plot.png)
 
 ### Pair Plot
 ```python
@@ -101,8 +101,8 @@ sns.pairplot(df_titanic, diag_kind='kde')
 ```
 - Plots scatter plots and KDE plots for all numeric features.
 - Useful for visual correlation analysis between all numeric variables.
-- 
-[Pair Plot](images/pairplot.png)
+  
+(images/pairplot.png)
 
 ### Correlation Heatmap
 ```python
@@ -111,8 +111,8 @@ sns.heatmap(correlation_matrix, annot=True, fmt=".2f", cmap="coolwarm", square=T
 ```
 - Shows the correlation matrix between numeric variables.
 - Positive correlations (red) and negative correlations (blue).
-- 
-[Correlation Heatmap](images/corr_heat.png)
+ 
+(images/corr_heat.png)
 
 ## Summary of Insights
 - **Fare** has outliers (high-paying passengers).
