@@ -112,7 +112,7 @@ sns.heatmap(correlation_matrix, annot=True, fmt=".2f", cmap="coolwarm", square=T
 - Shows the correlation matrix between numeric variables.
 - Positive correlations (red) and negative correlations (blue).
  
-![Correlation Heatmap](images/corr_heat.png)
+![Correlation Heatmap](images/corr_heatmap.png)
 
 ## Summary of Insights
 - **Fare** has outliers (high-paying passengers).
